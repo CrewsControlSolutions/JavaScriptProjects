@@ -20,3 +20,7 @@ function myFirstFunction() {    //defining a function and naming it
     var strOrange = str.fontcolor("orange");    //changing the string color
     document.getElementById("orangeText").innerHTML = strOrange;    //assign the value of strOrange into the HTML element with the "orangeText" id
 }
+
+function keyPress() {
+    alert("You pressed a key inside the input field"); //message to be displayed after a key press on the keyboard
+}
