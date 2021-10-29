@@ -11,3 +11,8 @@ function twoDogs() {
     a += "husky";
     document.getElementById("concatentate").innerHTML = a;
 }
+
+function winner() {
+    var a = "winner"
+    document.getElementById("lotteryEntry").innerHTML = a;
+}
