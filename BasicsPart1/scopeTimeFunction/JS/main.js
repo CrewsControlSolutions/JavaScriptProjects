@@ -27,6 +27,7 @@ function dayOfWeek() {
     }
 }
 
+//determine whether someone is eligible for the draft based on their gender
 function draftEligibility() {
     gender = document.getElementById('gender').value;
     if (gender == 'male') {
@@ -39,4 +40,20 @@ function draftEligibility() {
         draftStatus = 'Please try again by entering male or female.'
     }
     document.getElementById('draftEligibilityResult').innerHTML=draftStatus;
+}
+
+//gives a statement about what time of day it is
+function timeOfDayGreeting() {
+    var time = new Date().getHours();
+    var reply;
+    if (time<12 == time>0) {
+        reply='It is morning time';
+    }
+    else if (time>=12 == time < 18) {
+        reply='It is afternoon.';
+    }
+    else {
+        reply = 'It is evening time.';
+    }
+    document.getElementById('timeOfDay').innerHTML=reply;
 }

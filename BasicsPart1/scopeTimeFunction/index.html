@@ -7,12 +7,14 @@
   </head>
   <body>
 
+    <!-- greeting based on business hours -->
     <p id='greeting' onclick='greetingBusinessHours()'>Click here</p>
 
     <p id='endOfWorkWeek' onclick='dayOfWeek()'>Click here</p>
     
     <br><br>
 
+    <!-- determine draft eligibility  -->
     <p>Enter your gender (male/female) to determine whether you must be registerd for the draft, assuming you meet the legal age requirement: </p>
     <input id='gender' value='' />
     <p id='draftEligibilityResult'></p>
@@ -20,7 +22,9 @@
 
     <br><br>
 
-    
+    <!-- give a statement producing the time of day -->
+    <p id = "timeOfDay"></p>
+    <button onclick="timeOfDayGreeting()">Click here to get the time of day.</button>
     
   </body>
 </html>
