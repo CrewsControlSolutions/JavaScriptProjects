@@ -12,7 +12,10 @@ document.write(setup()+'<br><br>');
 function scopeTest() {
     var z = x+y; //the console produces an error saying that 'y is not defined'
     return z;
+    console.log(z);
+    console.log(y);
 }
+
 document.write(scopeTest());
 
 function greetingBusinessHours() {
