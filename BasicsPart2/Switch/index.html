@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Switch</title>
+    <script src='JS/main.js' defer></script>
+  </head>
+  <body>
+    <!-- User chooses option from list by typing it into the input field and hitting submit -->
+    <h1>What is your favorite scuba diving location?</h1>
+    <h3>Pick from this list:</h3>
+    <ul>
+      <li>Tahiti</li>
+      <li>Hawaii</li>
+      <li>Palau</li>
+    </ul>
+    <h3>Enter your choice below:</h3>
+
+    <input id='locationInput' type='text'>
+    <button onclick='locationSelection()'>Submit location</button>
+    <p id='output'></p>
+
+
+    <!-- an example of a way to change text within a specified class -->
+    <h1 class='click'>This text will change.</h1>
+    <h3 class='click'>This text will not change.</h3>
+    <button onclick='changeText()'>Click me to change the text.</button>
+    <br> <br>
+
+    <!-- an example of how to use a canvas tag -->
+    <canvas id='exampleCanvas' style='border:6px dashed orangered;'></canvas>
+    
+  </body>
+</html>
