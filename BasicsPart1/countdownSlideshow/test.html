@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Asynchronous Attribute</title>
+    <script src='defer.js' defer></script>
+  </head>
+  <body>
+    <!-- Use when asynchronous JavaScript loading is prefered over defer -->
+    <!-- <script src='async.js' async></script> -->
+
+    <p id='p1'>Hello World</p>
+
+    <!-- example of identifying an error using the debug console -->
+    <script>
+        a='One nation';
+        b=' under God';
+        document.write(a+b);
+
+        c=', indivisible';
+        d=', with liberty';
+        document.write(c+d);
+
+        e=' and justice';
+        f=' for all.';
+        document.write(e+f); //corrected the argument by changing from "f+z" to "e+f"
+    </script>
+    
+  </body>
+</html>
