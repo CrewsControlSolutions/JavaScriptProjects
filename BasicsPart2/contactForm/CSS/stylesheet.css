@@ -1,0 +1,8 @@
+input {
+    width:30%;
+}
+
+input[type=text] {
+    border: 6px,solid, navy;
+    background-color: lavender;
+}

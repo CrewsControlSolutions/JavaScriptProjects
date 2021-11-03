@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Contact Form</title>
+    <link rel='stylesheet' type='text/css' href='CSS/stylesheet.css' />
+    <script src="JS/main.js" defer></script>
+  </head>
+  <body>
+    <!-- example form containing fields, a submit button, and a form validation function call-->
+    <p>Please enter the country of your prefered vacation and your ideal travel month:</p>
+    <form id='exampleForm' name='exampleForm' onsubmit='return validateForm()' method='post'>
+        <label for='dest'>Country:</label><br>
+        <input type='text' id='dest' name='dest'><br>
+        <label for='month'>Month:</label><br>
+        <input type='text' id='month' name='month'><br> <br>
+        <input type='submit' value='Submit'>
+    </form>
+
+
+    
+  </body>
+</html>

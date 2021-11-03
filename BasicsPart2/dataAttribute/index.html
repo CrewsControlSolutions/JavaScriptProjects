@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Data Attribute</title>
+    <script src="JS/main.js" defer></script>
+  </head>
+  <body>
+    <h1>Dictators</h1>
+    <h3>Click on a country to see their worst dictator in the past 100 years, lest we ever forget history and its tendancy to repeat itself.</h3>
+
+    <ul>
+        <li onclick='displayFigure(this)' id='china' data-dictator='Mao Zedong'>China</li>
+        <li onclick='displayFigure(this)' id='sovietUnion' data-dictator='Joseph Stalin'>Soviet Union</li>
+        <li onclick='displayFigure(this)' id='naziGermany' data-dictator='Adolf Hitler'>Nazi Germany</li>
+        <li onclick='displayFigure(this)' id='cuba' data-dictator='Fidel Castro'>Cuba</li>
+        <li onclick='displayFigure(this)' id='venezuela' data-dictator='Nicolas Maduro'>Venezuela</li>
+    </ul>
+    
+    <!-- how to use the arrow function, =>, in JavaScript -->
+    <script>arrowFunction = () => 'This is a function that uses the arrow';</script>
+
+    <!-- determine if the tire pressures are acceptable -->
+    <p id='pressure' onclick='pressureCheck()'>Click me to see if any tire has less than 29 psi.</p>
+  </body>
+</html>
