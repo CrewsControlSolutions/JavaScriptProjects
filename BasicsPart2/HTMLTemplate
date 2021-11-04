@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Basic HTML Template</title>
+    <link rel='stylesheet' type='text/css' href='CSS/stylesheet.css' />
+    <script src='JS/main.js' defer></script>
   </head>
   <body>
 
