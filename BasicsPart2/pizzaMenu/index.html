@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <META http-equiv='Content-Type' content='text/html' charset="UTF-8">
+    <meta content='width=device-width,initial-scale=1.0' name='viewport'>
+    <title>Jabba's Pizza - Your Gangster Pie</title>
+    <link rel='stylesheet' type='text/css' href='CSS/stylesheet.css' />
+    <script src='JS/main.js' defer></script>
+  </head>
+  <body>
+    <div id='menuBG'>
+        <h1>Jabba the Hut's Pizza</h1>
+        <input id = 'btnOrder' type='button' onclick='getReceipt()'
+            value='Place Order'>
+        <form id = 'frmMenu'>
+            <div class='menu left'>
+                <h3>Size:</h3>
+                <input class='size' type='radio' name='Size' value='Personal Pizza'>Personal Pizza<br>
+                <input class='size' type='radio' name='Size' value='Medium Pizza'>Medium Pizza<br>
+                <input class='size' type='radio' name='Size' value='Large Pizza'>Large Pizza<br>
+                <input class='size' type='radio' name='Size' value='Extra Large Pizza'>Extra Large Pizza<br>
+                <input class='size' type='radio' name='Size' value='Jabba Pizza'>Jabba Pizza<br>
+            </div>
+
+            <div class='menu middle'>
+                <h3>Vegetables:</h3>
+                <input class='toppings' type='checkbox' name='Topping' value='Reeksa'>Reeksa<br>
+                <input class='toppings' type='checkbox' name='Topping' value='Spinebarrel'>Spinebarrel<br>
+                <input class='toppings' type='checkbox' name='Topping' value='Nightblossom'>Nightblossom<br>
+                <input class='toppings' type='checkbox' name='Topping' value='Neti'>Neti<br>
+                <input class='toppings' type='checkbox' name='Topping' value='Daltarri'>Daltarri<br>
+                <input class='toppings' type='checkbox' name='Topping' value='Ergesh'>Ergesh<br>
+            </div>
+
+            <div class='menu right'>
+                <h3>Meats:</h3>
+                <input class='toppings' type='checkbox' name='Topping' value='Womp Rat'>Womp Rat<br>
+                <input class='toppings' type='checkbox' name='Topping' value='Worrt'>Worrt<br>
+                <input class='toppings' type='checkbox' name='Topping' value='Nerf'>Nerf<br>
+                <input class='toppings' type='checkbox' name='Topping' value='Nuna'>Nuna<br>
+                <input class='toppings' type='checkbox' name='Topping' value='Swamp Slug'>Swamp Slug<br>
+                <input class='toppings' type='checkbox' name='Topping' value='Cannok'>Cannok<br>
+                <input class='toppings' type='checkbox' name='Topping' value='Varactyl'>Varactyl<br>
+            </div>
+            <div id='cart'>
+                <div id='showText'></div>
+                <div id='totalPrice'></div>
+            </div>
+        </form>
+    </div>
+  </body>
+</html>
