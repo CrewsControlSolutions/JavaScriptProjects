@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Basic HTML Template</title>
+        <link rel='stylesheet' type='text/css' href='CSS/stylesheet.css' />
+        <!-- define the script source to be able to access AJAX shorthand JavaScript notation -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    </head>
+
+    <!---- note that there is no 'body' defined here, as is typically the case ---->
+
+    <!-- sample script that utilizes AJAX syntax  -->
+    <script>
+        // when the HTML document is loaded (ready), enter the function that adds a body with paragraphs, events, and an effect
+        $(document).ready(function() {
+            // attach the following HTML code to the HTML document
+            $('html').append(
+                // utilize the backslash (\) to perform a line break for correct HTML parsing
+                "<body>\
+                    <div id='container'>\
+                        <div id='inner'>\
+                            <h1>Basic jQuery</h1>\
+                            <p id='1'>Paragraph 1</p>\
+                            <p id='2'>Paragraph 2</p>\
+                            <p id='3'>Paragraph 3</p>\
+                        </div>\
+                    </div>\
+                </body>"
+            );
+            //change the color of the element with an ID of '2' to red by using the CSS method using to set CSS-related properties
+            $('#2').css({"color":"red"});
+            //use the click event to trigger a function on the element with an ID of '3'
+            $("#3").click(function() {
+                //apply the hiding effect to the element with an ID of '3'
+                $('h1').hide();
+            });
+        //supply the necessary ending syntax to conclude the function being applied to the document
+        });
+    </script>
+</html>
