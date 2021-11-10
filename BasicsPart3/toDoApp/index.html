@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>To-do App</title>
+    <link rel='stylesheet' type='text/css' href='CSS/stylesheet.css' />
+  </head>
+  <body>
+    <!-- create an input field with a button for submitting user input -->
+    <input id='task'><button id='add'>Add Item</button>
+    <!-- horizontal line break -->
+    <hr>
+    <!-- display an updated list of to-do's -->
+    <div id='toDos'></div> <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <div id='optionalText'>
+        <h5 ondblclick='makeWhite()'>Below are examples of using JSON or local storage, not related to the above to-do list. Double click this heading to make the text white everywhere here and below.</h5>
+        <!-- using JSON to create a string from a dictionary -->
+        <p id='JSONExample1'></p> <br>
+
+        <script>
+            // JavaScript dictionary object
+            var dog = {name: "Einstein", breed: "German Shepherd", color: "White"};
+            // convert JavaScript object to JSON string format
+            var JSONString = JSON.stringify(dog);
+            document.getElementById('JSONExample1').innerHTML = JSONString;
+        </script>
+
+        <!-- using JSON to create JavaScript objects -->
+        <p id='JSONExample2'></p> <br>
+
+        <script>
+            // JSON string variable
+            var dog = '{"name": "Einstein", "breed": "German Shepherd", "color": "White"}';
+            // convert JSON strings to JavaScript objects
+            var JSONString = JSON.parse(dog);
+            document.getElementById('JSONExample2').innerHTML = JSONString.name + " is a " + JSONString.breed;
+        </script>
+
+        <!-- storing data locally in the web browser -->
+        <p id='localStorageExample'></p> <br>
+
+        <script>
+            // set the data as a key/value pair to be saved locally in the browser
+            localStorage.setItem('Name','Einsten');
+            // use the "Name" key to return its value
+            document.getElementById('localStorageExample').innerHTML = localStorage.getItem('Name');
+        </script>
+    </div>
+
+    <script src='JS/main.js'></script>
+    <footer>Stark Industries, Inc.</footer>
+  </body>
+</html>

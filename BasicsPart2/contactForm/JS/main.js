@@ -2,8 +2,17 @@
 function validateForm() {
     let x = document.forms['exampleForm']['dest'].value;
     let y = document.forms['exampleForm']['month'].value;
-    if (x=='' || y=='') {
+    let z = document.forms['exampleForm']['phone'].value;
+    if (x=='' || y=='' || z=='') {
         alert('Error:  All fields must be filled out.');
         return false;
     }
+}
+
+function openForm() {
+    document.getElementById('contactUs').style.display = 'block';
+}
+
+function closeForm() {
+    document.getElementById('contactUs').style.display = 'none';
 }

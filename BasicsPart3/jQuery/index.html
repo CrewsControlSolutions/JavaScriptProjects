@@ -8,7 +8,32 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     </head>
 
-    <!---- note that there is no 'body' defined here, as is typically the case ---->
+    <!-- the entire body is devoted to an example slideshow that references jQuery -->
+    <body>
+        <div id='slideshow'>
+            <div>
+                This is slide 1.
+            </div>
+            <div>
+                And now slide 2.
+            </div>
+            <div>
+                Here's slide 3. Rivetting, isn't it?
+            </div>
+        </div>
+        <script>
+            $('#slideshow > div:gt(0)').hide();
+
+            setInterval(function() {
+                $('#slideshow > div:first')
+                .fadeOut(1000)
+                .next()
+                .fadeIn(1000)
+                .end()
+                .appendTo('#slideshow');
+            }, 3000);
+        </script>
+    </body>
 
     <!-- sample script that utilizes AJAX syntax  -->
     <script>

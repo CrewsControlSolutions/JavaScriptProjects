@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>XHTML Example</title>
+    <!-- <link rel='stylesheet' type='text/css' href='CSS/stylesheet.css' />
+    <script src='JS/main.js' defer></script> -->
+  </head>
+  <body>
+    <!-- displayed parsed string -->
+    <p id='XMLExample'></p>
+    <!-- parse a string using XML -->
+    <script>
+        var XMLParser, XMLDoc;
+
+        // creates a text string
+        var movie = '<movie>' + 
+        '<title>Indiana Jones: The Last Crusade</title>' +
+        '<title>Indiana Jones: Raiders of the Lost Ark</title>' + //added this title to have two titles to choose between
+        '<director>Steven Spielberg</director>' +
+        '<starring>Harrison Ford</starring>' +
+        '</movie>';
+
+        // creates an XML DOM parser
+        XMLParser = new DOMParser();
+
+        // creates a new XML DOM object using the text string
+        XMLDoc = XMLParser.parseFromString(movie,'text/xml');
+
+        document.getElementById('XMLExample').innerHTML = XMLDoc.getElementsByTagName('title')[1].childNodes[0].nodeValue;
+    </script>
+  </body>
+</html>
