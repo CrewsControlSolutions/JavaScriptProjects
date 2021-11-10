@@ -21,4 +21,4 @@ A basic 4 function calculator. Users can add, subtract, multiply, and divide on 
 
 <h3>Specialty</h3> 
 
-Quick demos of jQuery, React.js, JSON, and/or XHTML in action.
+Quick demos of jQuery, React.js, JSON, and/or XHTML in action. See the To-Do List app for an example of all of these in action.
